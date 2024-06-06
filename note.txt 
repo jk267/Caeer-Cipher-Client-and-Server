@@ -1,0 +1,9 @@
+1. client sends an integer n in the range of 1-25.
+2. the server replies with the same number
+3. for any other lines of text the client sends, the server rotates the characters in those lines of text n positions and return result
+4. if the initial integer is not in the range of 1 to 25, the server sends an error messege
+note: this assignment's version only supports alphabetic characters( a-z, and A-Z).
+note: note that the lower-case letters stay lower-case letters and upper-case letters stay upper-case letters -- 
+i.e., you do not rotate a lower-case letter into an upper-case letter, or vice versa.
+note : Note also that if we view this service as a function, one session can serve as the inverse of another session if the first session 
+uses n for its rotation amount and the second session uses 26-n for its rotation amount. Your service should thus be able to both encode and decode messages using the Caesar Cipher.
